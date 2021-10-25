@@ -1,7 +1,7 @@
 import os
 import time
 from art import *
-from termcolor import colored, cprint
+# from termcolor import colored, cprint
 
 
 def clear_screen():
