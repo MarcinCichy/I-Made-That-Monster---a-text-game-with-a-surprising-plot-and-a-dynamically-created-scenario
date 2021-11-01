@@ -76,9 +76,6 @@ class Item:
         show_description(item_room_descr, any_used_items)
         time.sleep(3)
 
-#  dalej pracuje nad ta funkcja
-# testuje znajomosc gita :)))
-
 
 def main_game():
     is_used_items = len(used_items)
