@@ -31,11 +31,11 @@ def title_screen():
 
 
 def read_file(any_used_items):
-    path_name = os.getcwd()     
-    if int(any_used_items) != 0:        
-        file_path = path_name + "\\alternative_descriptions.txt"
+    # path_name = os.getcwd()
+    if int(any_used_items) == 0:
+        file_path = os.path.join(os.getcwd(), "descriptions.txt")
     else:
-        file_path = path_name + "\\descriptions.txt"
+        file_path = os.path.join(os.getcwd(), "alternative_descriptions.txt")
     with open(file_path, encoding="utf-8") as file:
         return file.readlines()
 
@@ -107,11 +107,6 @@ def check_equipment_exist_in_room(chapter, any_used_items):
                 return file_content[equipment_line]
             else:
                 return None
-
-
-# def show_room(room_numb):
-#         room_obj = list_of_rooms[room_number]
-#         rooms[room_obj].show_room_description() 
 
 
 def show_menu():
