@@ -1,0 +1,360 @@
+##### LEGEND ####
+##    line 0 - START_CHAPTER_NAME
+##    line 1 - equipment
+##    line 2 - wrong answer/ direction to death
+##    line 3 - good answer/ direction to alive
+##    next lines - lines of room description
+##    penultimate line  - item, which you can use in that room (only one :( )
+##    END_CHAPTER_NAME
+
+=====================================================================================================
+
+START_FIRST_DESCRIPTION
+#
+#
+#
+Ciężko otwierasz oczy.
+Głęboką ciemność przeszywa stróżka zimnego światła.
+Uszy świdruje krzyk.
+
+Nie potrafisz zebrać myśli. 
+Nie wiesz czy masz tak wielkiego kaca, nie wiesz gdzie jesteś.
+
+Pomieszczenie, jakby znajome, ale...
+
+Znowu ryk!
+Zrywasz się na równe nogi.
+Co to za monstrum?
+
+To nie może być twój pokój. Nie. 
+U Ciebie jest miło...
+
+Matko! Niech już nie ryczy...
+
+
+END_FIRST_DESCRIPTION
+
+========================================= 1 ============================================================
+
+START_FIRST_ROOM
+bulka
+o
+d
+Nic nie widzisz. 
+Twoje oczy przyzwyczajają się do ciemności.
+
+
+Twój policzek spoczywa na czymś twardym i chrupiącym!?
+Możesz sprawdzić co to jest i zabrać to.
+
+Wstajesz powoli.
+
+Przesuwając po podłodze stopę za stopą, próbujesz iść przed siebie.
+
+Znowu ryk!
+
+W sączącym się cienką stróżką, przez rozchylone zasłony, księżycowym świetle, dostrzegasz drzwi.
+
+Zastanawiasz się czy podejść do okna i wyjrzeć na zewnątrz? Może zorientujesz się gdzie jesteś.
+
+Czy jednak przejść przez drzwi?
+Czy zabierasz to coś chrupiącego?
+
+[O] - podejdź do okna
+[D] - przejdź przez drzwi
+#
+#
+END_FIRST_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_FIRST_ROOM
+#
+#
+#
+Czasami nadmierna ciekawość prowadzi do zguby...
+Zmierzając po omacku do okna, nadepnąłeś gołą stopą na coś plastikowego.
+
+Z bólu ZAWYŁEŚ tak głośno, że całkowicie zagłuszyłeś ryki TEGO CZEGOŚ.
+
+
+
+Straciłeś równowagę i grzmotnąłeś głową o kaloryfer...
+Pomoc już nie nadejdzie....
+#
+#
+END_TRAP_FIRST_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_ITEM_FIRST_ROOM
+#
+#
+#
+Bułka???
+SUCHA BUŁKA??!
+Dobra. Może będę głodny ;)
+
+#
+#
+END_ITEM_FIRST_ROOM
+
+========================================= 2 ===========================================================
+
+START_SECOND_ROOM
+telefon
+p
+l
+Zapaliłeś latarkę w telefonie.
+Znajdujesz się w długim wąskim przedpokoju.
+
+Dobrze, że cos widać. 
+
+Na podłodze leży olbrzymi pies.
+Mało brakowało, a nadepnąłbyś mu na ogon...
+
+Ryk sie wzmaga!!!
+
+Na końcu pomieszczenia są drzwi po lewej oraz po prawej stronie.
+W tle majaczy wielka szafa, ale w tej chwili nie interesujesz się tym co zawiera
+i czy cos jeszcze znajduje się za nią.
+
+Przez które drzwi przejdziesz?
+
+[P] - przejdź przez prawe drzwi
+[L] - przejdź przez lewe drzwi
+#
+telefon
+END_SECOND_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_SECOND_ROOM
+#
+#
+#
+Przez prawe drzwi wszedłeś do pokoju. Drzwi zatrzasnęły się za tobą.
+Od środka nie ma klamki...
+Pukasz, wołasz!
+
+Jesteś stracony..
+
+Ryk wzmaga się niemiłosiernie!!! A ty nic nie możesz zrobić.
+Za chwile eksplodują Ci bębenki...
+#
+#
+END_TRAP_SECOND_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_ITEM_SECOND_ROOM
+#
+#
+#
+Teraz masz telefon, którym możesz oświetlić najbliższe otoczenie.
+Ale uważaj. 
+Bateria nie jest całkowicie naładowana.
+Telefon nie posiada również karty SIM. Nie zadzwonisz po pomoc.
+#
+#
+END_ITEM_SECOND_ROOM
+
+========================================= 3 ===========================================================
+
+START_THIRD_ROOM
+butelka z mlekiem
+n
+p
+Znalazłeś sie w kuchni.
+W świetle latarki ze smartfona dostrzegasz zarys przedmiotów.
+
+Na szafce znajduje się niemowlęca butelka z mlekiem, obok leży smoczek.
+Zakładasz smoczek na butelkę.
+Do nogi łasię gruby kocur, przyjaźnie mruczy.
+
+Chyba cię zna, ty jego nie pamiętasz...
+
+RYK jest coraz głośniejszy...
+
+Przed sobą widzisz kolejne drzwi.
+Zastanawiasz się nad powrotem do przedpokoju.
+
+Czy zabierasz ze sobą butelkę?
+
+[P] - poprzednie pomieszczenie
+[N] - drzwi na wprost
+#
+telefon
+END_THIRD_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_THIRD_ROOM
+#
+#
+#
+Przeszedłeś przez drzwi na wprost.
+Małe pomieszczenie.
+Coś jakby spiżarka. 
+Brak wyjścia.
+Słyszysz syreny policyjne. Gdzieś w pobliżu...
+Czyżby związane były z rykiem, który stale rośnie na sile?
+
+Szybkie kroki na zewnątrz mieszkania, łomot do drzwi.
+Szlag! To policja wpada do środka!
+
+Jesteś aresztowany.
+
+Masz problemy.
+#
+#
+END_TRAP_THIRD_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_ITEM_THIRD_ROOM
+#
+#
+#
+Do twojej kieszeni trafiła butelka z mlekiem.
+Mleko jest jeszcze ciepłe.
+Po jaką ciężką cholerę potrzebna ci butelka z mlekiem???
+#
+#
+END_ITEM_THIRD_ROOM
+
+========================================= 4 ===========================================================
+
+START_FORTH_ROOM
+#
+p
+s
+Wróciłeś do przedpokoju.
+W świetle latarki widzisz śpiącego psa. Zgrabnie mijasz go 
+i udajesz się w kierunku szafy stojącej na końcu pomieszczenia.
+Ponownie masz do wyboru prawe drzwi lub te, które ukazały się a szafą.
+
+[P] - prawe drzwi
+[S] - drzwi za szafą
+#
+telefon
+END_FORTH_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_FORTH_ROOM
+#
+#
+#
+Przez prawe drzwi wszedłeś do pokoju. Drzwi zatrzasnęły się za tobą.
+Od środka nie ma klamki...
+Pukasz, wołasz!
+
+Jesteś stracony..
+
+Ryk wzmaga się jeszcze bardziej!!! A ty nic nie możesz zrobić.
+Za chwile eksplodują Ci bębenki...
+#
+#
+END_TRAP_FORTH_ROOM
+
+========================================= 5 ===========================================================
+
+START_FIFTH_ROOM
+#
+b
+bm
+Wchodzisz do pokoju.
+Widzisz zapłakanego bobasa.
+Stoi ten boroczek w łóżeczku i krzyczy z głodu.
+
+Tak, głos ma donośny.
+Kilka zębów na chwilę ukazuje się w buzi na twój widok.
+Ale nadal krzyczy!
+
+Masz bułkę i butelkę z mlekiem.
+
+Użyj któregoś z przedmiotów
+
+[BM] - butelka z mlekiem
+[B] - bułka
+#
+telefon
+END_FIFTH_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_FIFTH_ROOM
+#
+#
+#
+Bułka?! Sucha bułka?!!
+Dla dziecka?!
+
+Czyś ty się szaleju najadł?
+
+Przegiąłeś pałę i to dobrze.
+
+Dziecko jest głodne, zapłakane. 
+Ty nie wiesz co zrobić...
+
+
+Budź matkę tego bobasa..
+Masz krechę jak pas startowy.
+#
+#
+END_TRAP_FIFTH_ROOM
+
+========================================== 6 ==========================================================
+
+START_SIXTH_ROOM
+#
+l
+n
+Nakarmiłeś głodne dziecko mlekiem z butelki, zmieniłeś pieluchę.
+Jeszcze odrobinę łka.
+Już nie ryczy.
+
+OK, myślisz.
+Kładę malucha do łóżeczka i sam się położę. 
+Przecież to środek nocy.
+
+Jednak przez myśl przebiega ci pomysł, aby je jeszcze ponosić i utulić, aż zaśnie.
+
+[N] - nosisz bobasa na rękach
+[L] - odkładasz malucha do łóżeczka
+#
+#
+END_SIXTH_ROOM
+
+------------------------------------------------------------------------------------------------------
+
+START_TRAP_SIXTH_ROOM
+#
+#
+#
+Lipa!
+Znowu zaczyna się rozkręcać, wchodzi na wysokie tony.
+Należało poświęcić jeszcze trochę czasu i utulić malucha na rękach.
+
+Bez mamusi sie nie obejdzie...
+#
+#
+END_TRAP_SIXTH_ROOM
+
+=====================================================================================================
+
+START_LAST_DESCRIPTION
+#
+#
+#
+Udało się.
+
+Malec spi, i ty możesz spokojnie sie położyć.
+
+Kryzys zażegnany.
+
+Następnym razem połóż sie wcześniej i nie siedź nocami nad kodem.
+
+
+END_LAST_DESCRIPTION
