@@ -77,6 +77,9 @@ class Item:
         time.sleep(3)
 
 #  dalej pracuje nad ta funkcja
+# testuje znajomosc gita :)))
+
+
 def main_game():
     is_used_items = len(used_items)
     title_screen()
