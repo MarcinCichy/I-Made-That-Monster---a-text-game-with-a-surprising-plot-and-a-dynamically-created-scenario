@@ -78,19 +78,21 @@ class Item:
 
 
 def main_game():        # nadal pracuje nad ta funkcja i zaznajamiam sie z gitem
+    room_number = 0
     is_used_items = len(used_items)
     title_screen()
     clear_screen() 
     show_guide()
     clear_screen() 
     show_description("FIRST_DESCRIPTION", is_used_items)
-    print("\n\n Zawsze po nacisnięciu [I] pojawi się instrukcja.\n")
-    input("Nacisnij [ENTER]")   
+    print("\n\n Zawsze po naciśnięciu [I] pojawi się instrukcja.\n")
+    input("Naciśnij [ENTER]")
+    
     list_of_rooms = (create_rooms_names(is_used_items))
     list_of_items = (create_list_of_equipment(is_used_items))
     rooms = {name: Room(name=name) for name in list_of_rooms}
     items = {name: Item(name=name) for name in list_of_items}
-    room_number = 0
+    
     # With that loop I can make more and more rooms in 'description.txt' file
     while room_number != (len(list_of_rooms)):
         is_used_items = len(used_items)
@@ -102,10 +104,11 @@ def main_game():        # nadal pracuje nad ta funkcja i zaznajamiam sie z gitem
         key_pressed = str(rooms[room_obj].choose_action(room_number, len(list_of_rooms), is_used_items))
         if key_pressed.isnumeric():
             room_number = int(key_pressed)
-        else: 
+        else:
             if key_pressed.lower() == "z":
                 check_equipment_exist = (check_equipment_exist_in_room(rooms[room_obj].name, is_used_items)).strip()
-                if check_equipment_exist in list_of_items and check_equipment_exist not in equipment_taken and check_equipment_exist not in used_items:
+                if check_equipment_exist in list_of_items and check_equipment_exist not in equipment_taken \
+                   and check_equipment_exist not in used_items:
                     item_obj = check_equipment_exist
                     items[item_obj].take_item()
                     items[item_obj].item_description("item_"+rooms[room_obj].name, is_used_items)
@@ -123,13 +126,13 @@ def main_game():        # nadal pracuje nad ta funkcja i zaznajamiam sie z gitem
                     time.sleep(4)
             elif key_pressed.lower() == "i":
                 show_guide()
-            elif key_pressed.lower() == 'u': 
-                if len(equipment_taken) != 0:    
+            elif key_pressed.lower() == 'u':
+                if len(equipment_taken) != 0:
                     items[item_obj].use_item(rooms[room_obj].name, is_used_items)
                     time.sleep(2)
                 else:
                     print("Nie możesz użyc czegoś, czego nie masz.")
-                    time.sleep(2)      
+                    time.sleep(2)
     clear_screen() 
     end_game(rooms[room_obj].name, list_of_rooms, is_used_items)
    

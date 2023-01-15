@@ -31,7 +31,6 @@ def title_screen():
 
 
 def read_file(any_used_items):
-    # path_name = os.getcwd()
     if int(any_used_items) == 0:
         file_path = os.path.join(os.getcwd(), "descriptions.txt")
     else:
@@ -78,11 +77,12 @@ def can_use_item(chapter, any_used_items):
             return file_content[permission]
 
 
-def create_rooms_names(any_used_items):  
+def create_rooms_names(any_used_items):
     list_of_rooms = []
     file_content = read_file(any_used_items)
     for num, line in enumerate(file_content):
-        if ("START" in line) and ("ROOM" in line) and ("TRAP" not in line) and ("ITEM" not in line):
+        conditions = [("START" in line), ("ROOM" in line), ("TRAP" not in line), ("ITEM" not in line)]
+        if all(conditions):
             list_of_rooms.append(line[6:].strip())
     return list_of_rooms
 
